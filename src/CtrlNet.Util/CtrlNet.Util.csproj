@@ -4,24 +4,30 @@
     <TargetFrameworks>netstandard2.0;netcoreapp2.2;</TargetFrameworks>
     <Authors>HuiFeng</Authors>
     <Company>Ctrl</Company>
-    <Description>CtrlNet.Util是一个.net core平台下的应用框架，旨在提升小型团队的开发输出能力，由常用公共操作类(工具类)、分层架构基类、Ui组件，第三方组件封装，第三方业务接口封装等组成。
-</Description>
+    <Description>
+      CtrlNet.Util是一个.net core平台下的应用框架，由常用公共操作类(工具类)、第三方组件封装，第三方业务接口封装等组成。
+    </Description>
     <Product>Util</Product>
     <Copyright>HuiFeng</Copyright>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Util应用框架以MIT开源发布，可随意使用</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageLicenseUrl>https://github.com/fhcodegit/CtrlNet.Util/blob/master/LICENSE.TXT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/fhcodegit/CtrlNet.Util</PackageProjectUrl>
     <RepositoryUrl>https://github.com/fhcodegit/CtrlNet.Util</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Offices\" />
   </ItemGroup>
 
 </Project>
