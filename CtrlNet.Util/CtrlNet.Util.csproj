@@ -11,14 +11,13 @@
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Util应用框架以MIT开源发布，可随意使用</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Extensions\Extensions.Convert.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Extensions\Extensions.Convert.cs" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
 </Project>

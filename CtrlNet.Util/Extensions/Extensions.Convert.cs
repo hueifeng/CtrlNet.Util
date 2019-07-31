@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CtrlNet.Util.Extensions
 {
+
     /// <summary>
     ///		常规类型转换扩展类
-    ///     
     ///     <see cref="Int32"/>
     ///     <see cref="Double"/>
     ///     <see cref="Decimal"/>
@@ -243,3 +241,4 @@ namespace CtrlNet.Util.Extensions
     }
 
 }
+
