@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrlNet.Util", "CtrlNet.Util\CtrlNet.Util.csproj", "{295AB6D3-A429-46F9-83FE-78BF451F1A53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CtrlNet.Util", "CtrlNet.Util\CtrlNet.Util.csproj", "{295AB6D3-A429-46F9-83FE-78BF451F1A53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{65E0098E-73D4-47C4-BAAA-D1ABF0A7D70C}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.TXT = LICENSE.TXT
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-test", "02-test", "{ACEF2DEF-8EEB-4DBC-BED1-3EDE01035806}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EE0CDC6-96E5-405D-B648-CC17D8F23B43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
