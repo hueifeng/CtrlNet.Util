@@ -15,6 +15,9 @@
     <FileVersion>1.0.1.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Version>1.0.1</Version>
+    <PackageLicenseUrl>https://github.com/fhcodegit/CtrlNet.Util/blob/master/LICENSE.TXT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/fhcodegit/CtrlNet.Util</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fhcodegit/CtrlNet.Util</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

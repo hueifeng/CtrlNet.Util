@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CtrlNet.Util", "CtrlNet.Uti
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{65E0098E-73D4-47C4-BAAA-D1ABF0A7D70C}"
 	ProjectSection(SolutionItems) = preProject
+		CtrlNet.Util\favicon.ico = CtrlNet.Util\favicon.ico
 		LICENSE.TXT = LICENSE.TXT
 	EndProjectSection
 EndProject
