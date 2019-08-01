@@ -3,6 +3,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace CtrlNet.Util.Utils
 {
+    /// <summary>
+    ///     二进制序列化
+    /// </summary>
     public class BinarySerializer
     {
         public byte[] Serialize(object data)
