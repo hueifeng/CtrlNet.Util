@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\src\CtrlNet.Util\CtrlNet.Util.csproj" />
   </ItemGroup>
 

@@ -24,12 +24,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Offices\" />
   </ItemGroup>
 
   <ItemGroup>

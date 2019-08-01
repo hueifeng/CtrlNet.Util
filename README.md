@@ -40,3 +40,10 @@ DateTime date = CombUtil.GetDateFromComb(guid);
 var binary = new BinarySerializer().Serialize("obj");
 var obj= new BinarySerializer().Deserialize(binary);
 ```
+6、Excel操作
+```csharp
+//导出
+ExcelHelper.ExportBytes(new List<object>(),new string[1]);
+//导入
+ExcelHelper.ExcelImport<object>("filename");
+```
