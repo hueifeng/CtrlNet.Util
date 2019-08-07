@@ -17,8 +17,8 @@ namespace CtrlNet.Util.Offices
         ///     导出excel 二进制文件流
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="entitys"></param>
-        /// <param name="title"></param>
+        /// <param name="entitys">集合</param>
+        /// <param name="title">标题名称</param>
         /// <returns></returns>
         public static byte[] ExportBytes<T>(List<T> entitys, string[] title) where T : class, new()
         {
@@ -68,7 +68,7 @@ namespace CtrlNet.Util.Offices
         ///     导入excel
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="strFileName"></param>
+        /// <param name="strFileName">路径</param>
         /// <returns></returns>
         public static List<T> ExcelImport<T>(string fileName) where T:class,new(){
             List<T> list = new List<T> { };

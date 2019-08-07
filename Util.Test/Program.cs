@@ -15,8 +15,8 @@ namespace Util.Test
             var encryptStr= DESEncrypt.Encrypt("xxxx");
             //解密
             var str = DESEncrypt.Decrypt(encryptStr);
-           var str2= HttpMethods.Post("url", "jsondata");
-           var str1= HttpMethods.Get("url");
+           var str2= HttpMethods.PostAsync("url", "jsondata");
+           var str1= HttpMethods.GetAsync("url");
             //Guid操作
             Guid  guid= CombUtil.NewComb();
             DateTime date = CombUtil.GetDateFromComb(guid);

@@ -19,14 +19,21 @@ var encryptStr= DESEncrypt.Encrypt("xxxx");
 //解密
 var str = DESEncrypt.Decrypt(encryptStr);
 ```
+ 2.2 3DES加密
+```csharp
+     //加密
+    var str= 3DESEncrypt.Encrypt("123456");
+    //解密
+    3DESEncrypt.Decrypt("str");
+```
 3、Http
 ```csharp
 //同步
 var str= HttpMethods.Post("url", "jsondata");
 var str= HttpMethods.Get("url");
 //异步
-Task<HttpResponseMessage>  msg=HttpMethods.Post("url", "jsondata");
-Task<HttpResponseMessage>  msg=HttpMethods.Get("url");
+Task<HttpResponseMessage>  msg=HttpMethods.PostAsync("url", "jsondata");
+Task<HttpResponseMessage>  msg=HttpMethods.GetAsync("url");
 ```
 4、Guid操作    
 ```csharp
