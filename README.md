@@ -12,7 +12,8 @@ Install-Package CtrlNet.Util
     String验证、判断、中文拼音的转换等
     还有一些常规的验证判断
 2、Security
-   2.1 DES加密
+
+2.1 DES加密
 ```csharp
 //加密
 var encryptStr= DESEncrypt.Encrypt("xxxx");
@@ -21,10 +22,10 @@ var str = DESEncrypt.Decrypt(encryptStr);
 ```
  2.2 3DES加密
 ```csharp
-     //加密
-    var str= 3DESEncrypt.Encrypt("123456");
-    //解密
-    3DESEncrypt.Decrypt("str");
+//加密
+var str= 3DESEncrypt.Encrypt("123456");
+//解密
+3DESEncrypt.Decrypt("str");
 ```
 3、Http
 ```csharp
@@ -53,4 +54,21 @@ var obj= new BinarySerializer().Deserialize(binary);
 ExcelHelper.ExportBytes(new List<object>(),new string[1]);
 //导入
 ExcelHelper.ExcelImport<object>("filename");
+```
+7、增加对象映射
+//深度拷贝
+```csharp 
+MapperExtensions.Clone<Test>(test1);
+```
+//对象创建
+```csharp 
+MapperExtensions.Map<TDestination>(source);
+```
+对象创建
+```csharp 
+MapperExtensions.Map<TSource,TDestination>(source);
+```
+合并
+```csharp 
+MapperExtensions.Map<TSource,TDestination>(source);
 ```

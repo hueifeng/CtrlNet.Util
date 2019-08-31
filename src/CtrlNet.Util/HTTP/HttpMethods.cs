@@ -18,6 +18,7 @@ namespace CtrlNet.Util.HTTP
         /// <returns></returns>
         public static HttpClient CreateHttpClient(string url, IDictionary<string, string> cookies = null)
         {
+            
             HttpClient httpclient;
             HttpClientHandler handler = new HttpClientHandler();
             var uri = new Uri(url);
