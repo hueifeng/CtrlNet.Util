@@ -1,6 +1,10 @@
 # CtrlNet.Util
 CtrlNet.Util是一个.net core平台下的应用框架，由常用公共操作类(工具类)、第三方组件封装，第三方业务接口封装等组成。
 #
+### Nuget Packages
+| 包名称                                                         | Nuget稳定版本                                                                                                       | Nuget预览版本                                                                                                          | 下载数                                                                                                               |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [CtrlNet.Util](https://www.nuget.org/packages/CtrlNet.Util/) | [![CtrlNet.Util](https://img.shields.io/nuget/v/CtrlNet.Util.svg)](https://www.nuget.org/packages/CtrlNet.Util/) | [![CtrlNet.Util](https://img.shields.io/nuget/vpre/CtrlNet.Util.svg)](https://www.nuget.org/packages/CtrlNet.Util/) | [![CtrlNet.Util](https://img.shields.io/nuget/dt/CtrlNet.Util.svg)](https://www.nuget.org/packages/CtrlNet.Util/) |                                             
 使用：
 
 Install-Package CtrlNet.Util
