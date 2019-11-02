@@ -3,7 +3,7 @@
     /// <summary>
     /// 常量
     /// </summary>
-    public static class Const
+    internal static class Const
     {
         /// <summary>
         /// 汉字及拼音首字母

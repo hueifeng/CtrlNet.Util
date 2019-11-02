@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.2;</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>HuiFeng</Authors>
     <Company>Ctrl</Company>
     <Description>
@@ -12,14 +12,14 @@
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Util应用框架以MIT开源发布，可随意使用</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.6.0</AssemblyVersion>
-    <FileVersion>1.0.6.0</FileVersion>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>1.0.6</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.1.0-alpha</Version>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/fhcodegit/CtrlNet.Util</PackageProjectUrl>
     <RepositoryUrl>https://github.com/fhcodegit/CtrlNet.Util</RepositoryUrl>
-    <PackageIconUrl>http://123.233.116.37:8082/favicon.ico</PackageIconUrl>
+    <PackageIconUrl></PackageIconUrl>
     <PackageLicenseFile>LICENSE.TXT</PackageLicenseFile>
   </PropertyGroup>
 

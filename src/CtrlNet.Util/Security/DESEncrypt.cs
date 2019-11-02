@@ -9,7 +9,7 @@ namespace CtrlNet.Util.Security
     /// </summary>
     public class DESEncrypt
     {
-        private static string key = "xxxxx11111asqpso[saask..as';sasasa112";
+        public static string key = "xxxxx11111asqpso[saask..as';sasasa112";
 
         #region ========加密========
         /// <summary>
@@ -29,6 +29,10 @@ namespace CtrlNet.Util.Security
         /// <returns></returns> 
         public static string Encrypt(string Text, string sKey)
         {
+            if (string.IsNullOrWhiteSpace(Text))
+            {
+                return string.Empty;
+            }
             DESCryptoServiceProvider des = new DESCryptoServiceProvider();
             byte[] inputByteArray;
             inputByteArray = Encoding.Default.GetBytes(Text);
@@ -62,7 +66,7 @@ namespace CtrlNet.Util.Security
             }
             else
             {
-                return "";
+                return string.Empty;
             }
         }
         /// <summary> 
@@ -73,6 +77,10 @@ namespace CtrlNet.Util.Security
         /// <returns></returns> 
         public static string Decrypt(string Text, string sKey)
         {
+            if (string.IsNullOrWhiteSpace(Text))
+            {
+                return string.Empty;
+            }
             DESCryptoServiceProvider des = new DESCryptoServiceProvider();
             int len;
             len = Text.Length / 2;

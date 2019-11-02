@@ -6,7 +6,7 @@ namespace CtrlNet.Util.Security
     /// <summary>
     ///  MD5加密解密帮助类
     /// </summary>
-    public class Md5
+    internal class Md5
     {
         #region "MD5加密"
         /// <summary>
@@ -15,7 +15,7 @@ namespace CtrlNet.Util.Security
         /// <param name="str">加密字符</param>
         /// <param name="code">加密位数16/32</param>
         /// <returns></returns>
-        public static string Encrypt(string str, int code)
+        internal static string Encrypt(string str, int code)
         {
             string strEncrypt = string.Empty;
             if (code == 16)
@@ -34,7 +34,7 @@ namespace CtrlNet.Util.Security
         /// </summary>
         /// <param name="input">输入字段</param>
         /// <returns></returns>
-        public static string Hash(string input)
+        internal static string Hash(string input)
         {
             MD5CryptoServiceProvider md5Hasher = new MD5CryptoServiceProvider();
             byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));

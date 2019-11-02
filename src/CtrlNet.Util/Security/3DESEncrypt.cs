@@ -28,11 +28,10 @@ namespace CtrlNet.Util.Security
         /// <param name="Text">需要加密的内容</param>
         /// <param name="sKey">密钥</param>
         /// <returns></returns>
-        public static string Encrypt(string Text, byte[] sKey)
+        private static string Encrypt(string Text, byte[] sKey)
         {
             try
             {
-
                 var des = new TripleDESCryptoServiceProvider
                 {
                     Key = sKey,
@@ -67,7 +66,7 @@ namespace CtrlNet.Util.Security
         /// <param name="Text">需要解密的内容</param>
         /// <param name="sKey">密钥</param>
         /// <returns></returns>
-        public static string Decrypt(string Text, byte[] sKey)
+        private static string Decrypt(string Text, byte[] sKey)
         {
             try
             {

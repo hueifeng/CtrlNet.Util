@@ -43,12 +43,20 @@ namespace CtrlNet.Util.Extensions
         /// <returns></returns>
         public static int? ToIntOrNull(this object data)
         {
-            if (data == null)
-                return null;
-            bool isValid = int.TryParse(data.ToString(), out int result);
+            bool isValid = int.TryParse(data?.ToString(), out int result);
             if (isValid)
                 return result;
-            return null;
+            try
+            {
+                var temp = ToDoubleOrNull(data,null);
+                if (temp == null)
+                    return null;
+                return System.Convert.ToInt32(temp);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
         /// <summary>
         ///		转为双精度浮点数
@@ -67,9 +75,11 @@ namespace CtrlNet.Util.Extensions
         /// <param name="data">数据</param>
         /// <param name="digits">小数位</param>
         /// <returns></returns>
-        public static double ToDouble(this object data, int digits)
+        public static double ToDouble(this object data, int? digits)
         {
-            return Math.Round(ToDouble(data), digits);
+            if (digits == null)
+                return ToDouble(data);
+            return Math.Round(ToDouble(data), digits.Value);
         }
 
         /// <summary>
@@ -77,13 +87,18 @@ namespace CtrlNet.Util.Extensions
         /// </summary>
         /// <param name="data">数据</param>
         /// <returns></returns>
-        public static double? ToDoubleOrNull(this object data)
+        public static double? ToDoubleOrNull(this object data, int? digits)
         {
             if (data == null)
                 return null;
             bool isValid = double.TryParse(data.ToString(), out double result);
             if (isValid)
-                return result;
+            {
+                if (digits == null)
+                    return result;
+                else
+                    return Math.Round(ToDouble(data), digits.Value);
+            }
             return null;
         }
         /// <summary>
@@ -95,16 +110,18 @@ namespace CtrlNet.Util.Extensions
         {
             if (data == null)
                 return 0;
-            return decimal.TryParse(data.ToString(), out decimal result) ? result : 0;
+            return decimal.TryParse(data?.ToString(), out decimal result) ? result : 0;
         }
         /// <summary>
         /// 转换为高精度浮点数,并按指定的小数位4舍5入
         /// </summary>
         /// <param name="data">数据</param>
         /// <param name="digits">小数位数</param>
-        public static decimal ToDecimal(this object data, int digits)
+        public static decimal ToDecimal(this object data, int? digits)
         {
-            return Math.Round(ToDecimal(data), digits);
+            if (digits == null)
+                return ToDecimal(data);
+            return Math.Round(ToDecimal(data), digits.Value);
         }
 
 
@@ -128,12 +145,14 @@ namespace CtrlNet.Util.Extensions
         /// </summary>
         /// <param name="data">数据</param>
         /// <param name="digits">小数位数</param>
-        public static decimal? ToDecimalOrNull(this object data, int digits)
+        public static decimal? ToDecimalOrNull(this object data, int? digits)
         {
             var result = ToDecimalOrNull(data);
             if (result == null)
                 return null;
-            return Math.Round(result.Value, digits);
+            if (digits == null)
+                return result;
+            return Math.Round(result.Value, digits.Value);
         }
         #endregion
 
