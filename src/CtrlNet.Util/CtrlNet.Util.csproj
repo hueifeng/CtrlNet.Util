@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>HuiFeng</Authors>
-    <Company>Ctrl</Company>
+    <Authors>HueiFeng</Authors>
+    <Company></Company>
     <Description>
       CtrlNet.Util是一个.net core平台下的应用框架，由常用公共操作类(工具类)、第三方组件封装，第三方业务接口封装等组成。
     </Description>
-    <Product>Util</Product>
+    <Product>Free.Util</Product>
     <Copyright>HuiFeng</Copyright>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Util应用框架以MIT开源发布，可随意使用</PackageReleaseNotes>
@@ -15,10 +15,10 @@
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <FileVersion>1.1.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.1.0-alpha</Version>
+    <Version>1.1.0</Version>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/fhcodegit/CtrlNet.Util</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/fhcodegit/CtrlNet.Util</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dotnetfoundation/CtrlNet.Util</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dotnetfoundation/CtrlNet.Util</RepositoryUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageLicenseFile>LICENSE.TXT</PackageLicenseFile>
   </PropertyGroup>
